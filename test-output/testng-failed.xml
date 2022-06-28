@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Users.UserTest">
+        <methods>
+          <include name="setup"/>
+          <include name="Given_Invalid_Username_When_Retrieve_Users_Then_Empty_Response_Received"/>
+          <include name="When_Retrieve_Users_Then_Users_Listed"/>
+          <include name="Given_Valid_Username_When_Retrieve_Users_Then_Valid_User_Listed"/>
+        </methods>
+      </class> <!-- Users.UserTest -->
+      <class name="Posts.PostsTest">
+        <methods>
+          <include name="Given_Valid_UserId_When_Retrieve_Posts_Then_Posts_Per_User_Listed"/>
+          <include name="When_Retrieve_Posts_Then_All_Posts_Listed"/>
+          <include name="Given_Invalid_PostId_When_Retrieve_Posts_Then_NotFound_Error_Displayed"/>
+          <include name="setup"/>
+          <include name="Given_Valid_PostId_When_Retrieve_Comments_Then_Comments_Per_PostId_Retrieved"/>
+          <include name="Given_Invalid_UserId_When_Retrieve_Posts_Then_Empty_Response_Listed"/>
+        </methods>
+      </class> <!-- Posts.PostsTest -->
+      <class name="Comments.CommentsTest">
+        <methods>
+          <include name="When_Retrieve_Commands_Then_All_Comments_Listed"/>
+          <include name="setup"/>
+          <include name="Given_PostId_When_Retrieve_Comments_Then_Comments_PerPost_Listed"/>
+        </methods>
+      </class> <!-- Comments.CommentsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

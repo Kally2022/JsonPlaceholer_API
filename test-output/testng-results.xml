@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-27T17:52:02 CEST" name="Suite" finished-at="2022-06-27T17:52:13 CEST" duration-ms="10805">
+    <groups>
+    </groups>
+    <test started-at="2022-06-27T17:52:02 CEST" name="Test" finished-at="2022-06-27T17:52:13 CEST" duration-ms="10805">
+      <class name="Comments.CommentsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Comments.CommentsTest@20f5239f]" started-at="2022-06-27T17:52:07 CEST" name="setup" finished-at="2022-06-27T17:52:07 CEST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Given_PostId_When_Retrieve_Comments_Then_Comments_PerPost_Listed()[pri:0, instance:Comments.CommentsTest@20f5239f]" started-at="2022-06-27T17:52:07 CEST" name="Given_PostId_When_Retrieve_Comments_Then_Comments_PerPost_Listed" description="Retrieve Comments With Specific PostId" finished-at="2022-06-27T17:52:10 CEST" duration-ms="2760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_PostId_When_Retrieve_Comments_Then_Comments_PerPost_Listed -->
+        <test-method signature="When_Retrieve_Commands_Then_All_Comments_Listed()[pri:0, instance:Comments.CommentsTest@20f5239f]" started-at="2022-06-27T17:52:10 CEST" name="When_Retrieve_Commands_Then_All_Comments_Listed" description="Retrieve Comments" finished-at="2022-06-27T17:52:10 CEST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- When_Retrieve_Commands_Then_All_Comments_Listed -->
+      </class> <!-- Comments.CommentsTest -->
+      <class name="Users.UserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Users.UserTest@193f604a]" started-at="2022-06-27T17:52:02 CEST" name="setup" finished-at="2022-06-27T17:52:03 CEST" duration-ms="1544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Given_Invalid_Username_When_Retrieve_Users_Then_Empty_Response_Received()[pri:0, instance:Users.UserTest@193f604a]" started-at="2022-06-27T17:52:03 CEST" name="Given_Invalid_Username_When_Retrieve_Users_Then_Empty_Response_Received" description="Retrieve Invalid User" finished-at="2022-06-27T17:52:06 CEST" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_Invalid_Username_When_Retrieve_Users_Then_Empty_Response_Received -->
+        <test-method signature="Given_Valid_Username_When_Retrieve_Users_Then_Valid_User_Listed()[pri:0, instance:Users.UserTest@193f604a]" started-at="2022-06-27T17:52:06 CEST" name="Given_Valid_Username_When_Retrieve_Users_Then_Valid_User_Listed" description="Retrieve Specific User" finished-at="2022-06-27T17:52:07 CEST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_Valid_Username_When_Retrieve_Users_Then_Valid_User_Listed -->
+        <test-method signature="When_Retrieve_Users_Then_Users_Listed()[pri:0, instance:Users.UserTest@193f604a]" started-at="2022-06-27T17:52:07 CEST" name="When_Retrieve_Users_Then_Users_Listed" description="Retrieve All Users" finished-at="2022-06-27T17:52:07 CEST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- When_Retrieve_Users_Then_Users_Listed -->
+      </class> <!-- Users.UserTest -->
+      <class name="Posts.PostsTest">
+        <test-method signature="Given_Invalid_PostId_When_Retrieve_Posts_Then_NotFound_Error_Displayed()[pri:0, instance:Posts.PostsTest@57af006c]" started-at="2022-06-27T17:52:10 CEST" name="Given_Invalid_PostId_When_Retrieve_Posts_Then_NotFound_Error_Displayed" description="Retrieve Posts Invalid Id" finished-at="2022-06-27T17:52:12 CEST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_Invalid_PostId_When_Retrieve_Posts_Then_NotFound_Error_Displayed -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Posts.PostsTest@57af006c]" started-at="2022-06-27T17:52:10 CEST" name="setup" finished-at="2022-06-27T17:52:10 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Given_Invalid_UserId_When_Retrieve_Posts_Then_Empty_Response_Listed()[pri:0, instance:Posts.PostsTest@57af006c]" started-at="2022-06-27T17:52:12 CEST" name="Given_Invalid_UserId_When_Retrieve_Posts_Then_Empty_Response_Listed" description="Retrieve Posts per Invalid User" finished-at="2022-06-27T17:52:12 CEST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_Invalid_UserId_When_Retrieve_Posts_Then_Empty_Response_Listed -->
+        <test-method signature="Given_Valid_PostId_When_Retrieve_Comments_Then_Comments_Per_PostId_Retrieved()[pri:0, instance:Posts.PostsTest@57af006c]" started-at="2022-06-27T17:52:12 CEST" name="Given_Valid_PostId_When_Retrieve_Comments_Then_Comments_Per_PostId_Retrieved" description="Retrieve Comments for Specific Post Id" finished-at="2022-06-27T17:52:12 CEST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_Valid_PostId_When_Retrieve_Comments_Then_Comments_Per_PostId_Retrieved -->
+        <test-method signature="Given_Valid_UserId_When_Retrieve_Posts_Then_Posts_Per_User_Listed()[pri:0, instance:Posts.PostsTest@57af006c]" started-at="2022-06-27T17:52:12 CEST" name="Given_Valid_UserId_When_Retrieve_Posts_Then_Posts_Per_User_Listed" description="Retrieve Posts per Specific User" finished-at="2022-06-27T17:52:12 CEST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Given_Valid_UserId_When_Retrieve_Posts_Then_Posts_Per_User_Listed -->
+        <test-method signature="When_Retrieve_Posts_Then_All_Posts_Listed()[pri:0, instance:Posts.PostsTest@57af006c]" started-at="2022-06-27T17:52:12 CEST" name="When_Retrieve_Posts_Then_All_Posts_Listed" description="Retrieve All Posts" finished-at="2022-06-27T17:52:13 CEST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- When_Retrieve_Posts_Then_All_Posts_Listed -->
+      </class> <!-- Posts.PostsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
