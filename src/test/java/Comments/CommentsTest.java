@@ -53,7 +53,7 @@ public class CommentsTest {
     @Test(description = "Retrieve Comments With Specific PostId")
     public void Given_PostId_When_Retrieve_Comments_Then_Comments_PerPost_Listed() {
 
-        String username = "Delphine";
+        String username = "Delphine";// Provided username
 
         User[] users = userController.retrieveUsersByUsername(username);
         Integer userId = users[0].getId();

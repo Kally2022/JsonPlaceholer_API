@@ -29,7 +29,7 @@ public class UserTest {
     @Test(description = "Retrieve Invalid User")
     public void Given_Invalid_Username_When_Retrieve_Users_Then_Empty_Response_Received() {
 
-        String username = "XZX";
+        String username = "XZX";// Invalid userdetails
 
         User[] users = userController.retrieveUsersByUsername(username);
 
@@ -47,7 +47,7 @@ public class UserTest {
         assertThat(user.getUsername()).isEqualTo(username);
         assertThat(user.getId()).isEqualTo(9);
         assertThat(user.getName()).isEqualTo("Glenna Reichert");
-        assertThat(user.getEmail()).isEqualTo("Chaim_McDermott@dana.io");
+        assertThat(user.getEmail()).isEqualTo("Chaim_McDermott@dana.io"); 
         assertThat(user.getAddress().getStreet()).isEqualTo("Dayna Park");
         assertThat(user.getAddress().getSuite()).isEqualTo("Suite 449");
         assertThat(user.getAddress().getZipcode()).isEqualTo("76495-3109");
